@@ -250,7 +250,8 @@ table {
 	transform: scale(1) translateX(-150px);
 }
 #shortcut>div[data-position="3"] {
-	left: calc(50% - 50px);
+	/* left: calc(50% + 100px); */
+	right: 0;
 	top: calc(50% + 110px);
 }
 #shortcut.hidden>div[data-position="3"] {

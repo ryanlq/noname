@@ -334,7 +334,7 @@ table {
 
 #splash {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	left: 0;
 	top: 0;
 	position: absolute;
@@ -343,13 +343,16 @@ table {
 	transition: all 0.3s;
 	overflow-x: scroll;
 	white-space: nowrap;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10% 0;
 }
 #splash.removing {
 	pointer-events: none;
 }
 #splash>div {
 	width: 100px;
-	height: 300px;
+	height: 500px;
 	top: calc(50% - 150px);
 	margin-left: 10px;
 	margin-right: 10px;
@@ -359,9 +362,11 @@ table {
 }
 #splash>div:first-child {
 	margin-left: 20px;
+	margin-bottom: 20px;
 }
 #splash>div:last-child {
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 #splash:not(.touch)>div:hover:not(.clicked) {
 	transform: translateY(-20px);
@@ -382,7 +387,7 @@ table {
 }
 #splash>div>.splashtext {
 	font-family: 'huangcao','xinwei';
-	font-size: 50px;
+	font-size: 90px;
 	position: absolute;
 	right: 7px;
 	bottom: 7px;

@@ -1045,25 +1045,28 @@
 					ui_zoom:{
 						name:'界面缩放',
 						unfrequent:true,
-						init:'normal',
+						init:isMobile?"zbig":"normal",
 						item:{
 							esmall:'80%',
 							vsmall:'90%',
 							small:'95%',
 							normal:'100%',
-							big:'105%',
-							vbig:'110%',
-							ebig:'120%',
+							big:'120%',
+							vbig:'140%',
+							ebig:'160%',
+							zbig:'170%',
 						},
 						onclick:function(zoom){
 							game.saveConfig('ui_zoom',zoom);
+							//@xdaoo
 							switch(zoom){
 								case 'esmall':zoom=0.8;break;
 								case 'vsmall':zoom=0.9;break;
 								case 'small':zoom=0.93;break;
-								case 'big':zoom=1.05;break;
-								case 'vbig':zoom=1.1;break;
-								case 'ebig':zoom=1.2;break;
+								case 'big':zoom=1.2;break;
+								case 'vbig':zoom=1.4;break;
+								case 'ebig':zoom=1.6;break;
+								case 'zbig':zoom=1.7;break;
 								default:zoom=1;
 							}
 							game.documentZoom=game.deviceZoom*zoom;
@@ -3598,9 +3601,9 @@
 							}
 						},
 						name:'背景音乐',
-						init:true,
+						init:false,
 						item:{
-							music_default:'默认',
+							music_default:'关闭',
 						},
 						onclick:function(item){
 							game.saveConfig('background_music',item);
@@ -45320,9 +45323,10 @@
 					case 'esmall':zoom=0.8;break;
 					case 'vsmall':zoom=0.9;break;
 					case 'small':zoom=0.93;break;
-					case 'big':zoom=1.05;break;
-					case 'vbig':zoom=1.1;break;
-					case 'ebig':zoom=1.2;break;
+					case 'big':zoom=1.2;break;
+					case 'vbig':zoom=1.4;break;
+					case 'ebig':zoom=1.6;break;
+					case 'zbig':zoom=1.7;break;
 					default:zoom=1;
 				}
 				game.documentZoom=game.deviceZoom*zoom;
