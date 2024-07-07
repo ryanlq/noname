@@ -4178,7 +4178,6 @@ div[data-decoration="bronze"]::after{
 	/*color:#631515;*/
 	border: 1px solid rgb(74, 29, 1);
 	color: rgb(151, 59, 2);
-	background-color: #000;
 	text-shadow: none;
 	text-align: center;
 	line-height: 18px;
@@ -4243,7 +4242,6 @@ div[data-decoration="bronze"]::after{
 	top: 8px;
 	right: 6px;
 	color: rgba(255, 255, 255, 0.8);
-	background-color: #000;
 	text-shadow: none;
 }
 .card.fullskin>.info.red {
