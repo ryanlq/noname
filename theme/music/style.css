@@ -37,6 +37,9 @@ body[data-background_color_music='blue'] #arena.mobile:not(.chess) .player[data-
 .marks>.card.fullskin>.markcount.menubutton{
 	background: url('wood3.png');
 }
+.card.fullskin>.name{
+	color:#222222 !important;
+}
 
 
 /*.player.current_action{

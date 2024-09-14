@@ -4194,7 +4194,7 @@ div[data-decoration="bronze"]::after{
 	padding-right: 1px;
 	/*color:#631515;*/
 	border: 1px solid rgba(0, 0, 0, 0.46);
-	color: #fff;
+	color: #ffffff;
 	text-shadow: none;
 	text-align: center;
 	line-height: 18px;
@@ -4258,11 +4258,11 @@ div[data-decoration="bronze"]::after{
 .card.fullskin>.info {
 	top: 8px;
 	right: 6px;
-	color: rgba(0,0,0,0.8);
+	color: rgba(0,0,0,0.8) !important; ;
 	text-shadow: none;
 }
 .card.fullskin>.info.red {
-	color: #631515;
+	color: #631515 !important;
 }
 
 .config>.toggle.onoff {

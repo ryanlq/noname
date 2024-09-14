@@ -99,6 +99,11 @@ html{
 .card{
 	color:white;
 }
+
+
+.card.fullskin>.name{
+	color:#222222 !important;
+}
 .card:not(*:empty),.cardbg{
 	color:rgb(77, 60, 51);
 	text-shadow:none;
